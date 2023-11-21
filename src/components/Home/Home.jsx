@@ -7,7 +7,7 @@ const Home = () => {
   const data = {
     heading: "BREAKFAST SPECIAL",
     meal: "MEAL",
-    para: "Real Delicious Food Straight To Your Door. Enjoy this delicious meal with our 1 plus 1 offer & get 2 personal pizzas starting @₹279. Order Pizzas 1 plus 1 Bugujju Style Pizza & get 2 Personal pizza starting @ 30000/=.",
+    para: "Real Delicious Food Straight To Your Door. Enjoy this delicious meal with our 1 plus 1 offer & get 2 personal pizzas starting @ 15000/=. Order Pizzas 1 plus 1 Bugujju Style Pizza & get 2 Personal pizza starting @ 30000/=.",
     button: "Order Online",
     image: "images/hero-img.png",
   };
