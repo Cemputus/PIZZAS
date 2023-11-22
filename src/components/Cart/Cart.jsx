@@ -19,7 +19,7 @@ const Cart = ({ setShowCart }) => {
           <div className="cart-footer">
             <div className="subtotal">
               <div className="text">Subtotal:</div>
-              <div className="text total">₹2,374</div>
+              <div className="text total">100,000/=</div>
             </div>
             <div className="button">
               <button className="checkout-cta">Checkout</button>

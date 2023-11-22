@@ -77,8 +77,8 @@ const Wrapper = styled.section`
           font-size: 20px;
         }
         .text {
-          color: rgba(0, 0, 0, 0.5);
-          font-size: 14px;
+            color: cream; /* Set the text color to cream */
+            font-size: 14px;
         }
         .c-item {
           display: flex;

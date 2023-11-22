@@ -19,7 +19,7 @@ const CartItem = () => {
             <div className="text">
               <span>3</span>
               <span>x</span>
-              <span className="highlight">₹399</span>
+              <span className="highlight">40,000/=</span>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ const CartItem = () => {
             <div className="text">
               <span>2</span>
               <span>x</span>
-              <span className="highlight">₹249</span>
+              <span className="highlight">35,000/=</span>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ const CartItem = () => {
             <div className="text">
               <span>1</span>
               <span>x</span>
-              <span className="highlight">₹679</span>
+              <span className="highlight">25,000/=</span>
             </div>
           </div>
         </div>
