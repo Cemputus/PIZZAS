@@ -11,7 +11,7 @@ const Menuitems = (props) => {
         </div>
         <div className="prod-details">
           <span className="name">{props.pname}</span>
-          <span className="price">&#8377;{props.price}</span>
+          <span className="price">UGX {props.price}</span>
         </div>
         <div className="cart-buttons">
           {/* <div className="quantity-buttons">
