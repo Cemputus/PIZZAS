@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
               <div className="c-item">
                 <FaEnvelope />
-                <div className="text">Email: ensubuga019@@gmail.com</div>
+                <div className="text">Email: patraanddave@gmail.com</div>
               </div>
             </div>
             <div className="col">

@@ -52,7 +52,7 @@ const Contact = () => {
 
           <div className="map">
             <iframe
-              src="https://www.google.com/maps/dir/''/Uganda+Christian+University+Mukono,+Plot+67-173,+Bishop+Tucker+Road,+Mukono,+Uganda/@0.3552769,32.6980384,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x177dc7bd7d9ecc33:0xe7db325168bf53ad!2m2!1d32.7392386!2d0.355277!1m5!1m1!1s0x177dc7bd7d9ecc33:0xe7db325168bf53ad!2m2!1d32.7392386!2d0.355277?hl=en&entry=ttu"
+              src="https://www.google.com/maps/dir//Cafe+Delish,+Nobel+PLaza,Opposite+Equity+Bank+Mukono,Kampala+Road+Next+to+Central+Police+Station,+Mukono,+Uganda/@0.362247,32.7417003,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dc76aee9f8f1f:0x15fbfa0d6140e034!2m2!1d32.7442793!2d0.3622512?hl=en&entry=ttu"
               width="90%"
               height="450"
               style={{ border: 0 }}
