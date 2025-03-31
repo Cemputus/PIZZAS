@@ -93,6 +93,7 @@ ul{
   align-items: center;
   width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 input, textarea{
   max-width: 50rem;
@@ -138,6 +139,8 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 //Media Query
@@ -154,6 +157,69 @@ input::-webkit-inner-spin-button {
   
   .wrapper-background{
     padding: 4rem 0;
+  }
+}
+
+/* Page-specific styles */
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  @media only screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  @media only screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    gap: 1.5rem;
+  }
+}
+
+/* Flex layouts */
+.flex {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  @media only screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+}
+
+/* Section styles */
+.section {
+  width: 100%;
+  padding: 4rem 0;
+  @media only screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 3rem 0;
+  }
+}
+
+/* Card styles */
+.card {
+  background: ${({ theme }) => theme.colors.white};
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+  width: 100%;
+  @media only screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 1.5rem;
   }
 }
 `;
