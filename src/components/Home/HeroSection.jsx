@@ -43,6 +43,7 @@ const Wrapper = styled.section`
     justify-content: center;
     width: 100%;
     padding: 2rem 0;
+    text-align: center;
   }
   .section-inner {
     display: flex;
@@ -52,8 +53,9 @@ const Wrapper = styled.section`
   }
   .heading-text {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1.2;
+    margin-bottom: 1.5rem;
     span {
       color: ${({ theme }) => theme.colors.bg};
     }
@@ -62,7 +64,7 @@ const Wrapper = styled.section`
     max-width: fit-content;
     border-radius: 5rem;
     background-color: ${({ theme }) => theme.colors.bg};
-    margin-top: 2rem;
+    margin: 2rem auto 0;
   }
   a {
     display: flex;
@@ -71,8 +73,7 @@ const Wrapper = styled.section`
     font-size: 1.4rem;
   }
   .hero-para {
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    margin: 1.5rem auto 2rem;
     max-width: 100%;
     font-size: 1.4rem;
     line-height: 1.6;
@@ -93,6 +94,7 @@ const Wrapper = styled.section`
     height: auto;
     object-fit: contain;
   }
+
   @media only screen and (min-width: ${({ theme }) => theme.media.tab}) {
     .section-inner {
       flex-direction: row;
@@ -102,15 +104,17 @@ const Wrapper = styled.section`
     .section-hero-data {
       width: 50%;
       padding: 0;
+      text-align: left;
     }
     .heading-text {
-      font-size: 6.4rem;
+      font-size: 5.6rem;
       line-height: 1.1;
+      margin-bottom: 2rem;
     }
     .hero-para {
       font-size: 1.6rem;
       max-width: 50rem;
-      margin-bottom: 3.4rem;
+      margin: 0 0 3.4rem;
     }
     .section-hero-image {
       width: 50%;
@@ -122,16 +126,28 @@ const Wrapper = styled.section`
     a {
       font-size: 1.5rem;
     }
+    .btn {
+      margin: 0;
+    }
   }
+
   @media only screen and (max-width: ${({ theme }) => theme.media.mobile}) {
     .heading-text {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
     }
     .hero-para {
       font-size: 1.2rem;
+      margin: 1rem auto 1.5rem;
     }
     .section-inner {
       gap: 2rem;
+      padding: 1.5rem 0;
+    }
+    .section-hero-data {
+      padding: 1rem 0;
+    }
+    .section-hero-image {
+      padding: 1rem 0;
     }
   }
 `;
