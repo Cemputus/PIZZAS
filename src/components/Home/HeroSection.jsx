@@ -41,15 +41,19 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
   }
   .section-inner {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
+    padding: 2rem 0;
   }
   .heading-text {
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
+    line-height: 1.2;
     span {
       color: ${({ theme }) => theme.colors.bg};
     }
@@ -58,6 +62,7 @@ const Wrapper = styled.section`
     max-width: fit-content;
     border-radius: 5rem;
     background-color: ${({ theme }) => theme.colors.bg};
+    margin-top: 2rem;
   }
   a {
     display: flex;
@@ -67,35 +72,66 @@ const Wrapper = styled.section`
   }
   .hero-para {
     margin-top: 1.5rem;
-    margin-bottom: 3.4rem;
+    margin-bottom: 2rem;
     max-width: 100%;
     font-size: 1.4rem;
+    line-height: 1.6;
   }
   .section-hero-image {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
   }
   picture {
     text-align: center;
+    width: 100%;
   }
   .hero-img {
-    max-width: 80%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
   @media only screen and (min-width: ${({ theme }) => theme.media.tab}) {
-    .heading-text {
-      text-transform: uppercase;
-      font-size: 6.4rem;
-    }
     .section-inner {
       flex-direction: row;
+      gap: 5rem;
+      padding: 4rem 0;
+    }
+    .section-hero-data {
+      width: 50%;
+      padding: 0;
+    }
+    .heading-text {
+      font-size: 6.4rem;
+      line-height: 1.1;
     }
     .hero-para {
       font-size: 1.6rem;
       max-width: 50rem;
+      margin-bottom: 3.4rem;
+    }
+    .section-hero-image {
+      width: 50%;
+      padding: 0;
+    }
+    .hero-img {
+      max-width: 80%;
     }
     a {
       font-size: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    .heading-text {
+      font-size: 2.5rem;
+    }
+    .hero-para {
+      font-size: 1.2rem;
+    }
+    .section-inner {
+      gap: 2rem;
     }
   }
 `;
