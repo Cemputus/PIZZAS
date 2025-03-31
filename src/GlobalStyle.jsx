@@ -91,6 +91,8 @@ ul{
   min-height: 100vh;
   display: flex;
   align-items: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 input, textarea{
   max-width: 50rem;
@@ -100,6 +102,10 @@ input, textarea{
   text-transform: uppercase;
   box-shadow: ${({ theme }) => theme.colors.shadowSupport};
   border-radius: 0.5rem;
+  width: 100%;
+  @media only screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 1.2rem 1.8rem;
+  }
 }
 input[type='submit'] {
   margin-top: 2rem;
@@ -112,6 +118,11 @@ input[type='submit'] {
   font-size: 1.8rem;
   cursor: pointer;
   border-radius: 0.8rem;
+  width: 100%;
+  @media only screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 1.2rem;
+    font-size: 1.6rem;
+  }
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -124,12 +135,25 @@ input::-webkit-inner-spin-button {
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 //Media Query
 @media only screen and (min-width: ${({ theme }) => theme.media.tab}){
   .container{
     padding: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: ${({ theme }) => theme.media.mobile}){
+  .container{
+    padding: 0 1.5rem;
+  }
+  
+  .wrapper-background{
+    padding: 4rem 0;
   }
 }
 `;
